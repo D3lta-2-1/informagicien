@@ -1,4 +1,4 @@
-baseURL: https://d3lta-2-1.github.io/
+baseURL: https://d3lta-2-1.github.io/informagicien
 #locale: en-us
 title: Notes d'un informagicien
 theme: [PaperMod]
@@ -25,7 +25,7 @@ params:
   homeInfoParams:
     Title: "Présentations de mes habitudes"
     Content: |
-      Ce blog a pour objectif d'être une porte d'entrée au developpement logiciel [lire plus...](/about/)
+      Ce blog a pour objectif d'être une porte d'entrée au developpement logiciel [lire plus...](about)
       - Il se veut accessible pour tous et ne présuppose aucune connaissance préalable  du lecteur.
 
 caches:
