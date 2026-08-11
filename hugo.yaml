@@ -1,0 +1,32 @@
+baseURL: https://example.org/
+#locale: en-us
+title: Notes d'un informagicien
+theme: [PaperMod]
+enableEmoji: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "Notes d'un informagicien"
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+
+  homeInfoParams:
+    Title: "Présentations de mes habitudes"
+    Content: |
+      Ce blog a pour objectif d'être une porte d'entré au developpement logiciel [lire plus...](/about/)
+      - Il se veut accessible pour tous et ne présuppose aucun connaissance préalable  du lecteur.
+      - Explore the [Docs (Wiki)](https://github.com/adityatelange/hugo-PaperMod/wiki/) to learn more about features and configuration.
+
+
