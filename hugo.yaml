@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://d3lta-2-1.github.io/
 #locale: en-us
 title: Notes d'un informagicien
 theme: [PaperMod]
@@ -25,9 +25,8 @@ params:
   homeInfoParams:
     Title: "Présentations de mes habitudes"
     Content: |
-      Ce blog a pour objectif d'être une porte d'entré au developpement logiciel [lire plus...](/about/)
-      - Il se veut accessible pour tous et ne présuppose aucun connaissance préalable  du lecteur.
-      - Explore the [Docs (Wiki)](https://github.com/adityatelange/hugo-PaperMod/wiki/) to learn more about features and configuration.
+      Ce blog a pour objectif d'être une porte d'entrée au developpement logiciel [lire plus...](/about/)
+      - Il se veut accessible pour tous et ne présuppose aucune connaissance préalable  du lecteur.
 
 caches:
   images:
