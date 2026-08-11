@@ -29,4 +29,6 @@ params:
       - Il se veut accessible pour tous et ne présuppose aucun connaissance préalable  du lecteur.
       - Explore the [Docs (Wiki)](https://github.com/adityatelange/hugo-PaperMod/wiki/) to learn more about features and configuration.
 
-
+caches:
+  images:
+    dir: :cacheDir/images
