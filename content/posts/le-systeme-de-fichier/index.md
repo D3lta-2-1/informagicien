@@ -35,20 +35,21 @@ Car oui, le bureau est un dossier. Il est parfaitement possible de configurer le
 
 ``explorer.exe`` ou plus simplement "l'explorateur de fichiers" est la manière la plus simple et la plus fréquente d'interagir avec le système de fichier. Car son utilisation reste relativement intuitive, je ne vais pas le présenter plus que nécessaire.
 
-
-Cependant le système de fichier se veut accessible, et cache certains détails par défaut aux utilisateurs.
-- certains dossiers sont cachés par défaut
+Le système de fichier se veut accessible, et cache donc, par défaut, certains détails aux utilisateurs.
+- certains dossiers ne sont simplement pas visible.
 - les extensions de fichier (par exemple ``.png``) sont cachées par défaut. Ces extensions sont une convention de nommage qui permet d'identifier quel genre de données le fichier contient. Elles sont généralement l'acronyme du format de données utilisé, par exemple ``png`` est l'acronyme de **P**ortable **N**etwork **G**raphics
 
 Il est fortement conseillé de le configurer pour afficher les dossiers cachés ainsi que les extensions des fichiers: 
 ![image](config_explorer.png)
 
+Il faut cocher ces deux cases.
+
 ## 2 / Via un terminal
 
-Il en existe deux sous Windowss, ``cmd`` et ``powershell``, ``powershell`` est essentiellement une version modernisée de ``cmd``.
+Il en existe deux sous Windows, ``cmd`` et ``powershell``, ``powershell`` est essentiellement une version modernisée de ``cmd``.
 Il y a deux façons d'ouvrir un terminal: 
-- via le raccourci ``windows + r`` puis en entrant ``powershell``, ce qui ouvre le terminal dans le dossier utilisateur: ![image](ouvrir_terminal1.png)
-- en faisant un clic droit dans l'explorateur de fichierss, ce qui ouvre le terminal dans le dossier courant: ![image](ouvrir_terminal2.png)
+- A/ via le raccourci ``windows + r`` puis en entrant ``powershell``, ce qui ouvre le terminal dans le dossier utilisateur: ![image](ouvrir_terminal1.png)
+- B/ en faisant un clic droit dans l'explorateur de fichiers, ce qui ouvre le terminal dans le dossier courant: ![image](ouvrir_terminal2.png)
 
 Une fois lancé, le terminal se présente sous la forme suivante
 ```cmd
@@ -57,9 +58,9 @@ PS C:\Users\demo\Desktop>
 Pour l'utiliser, il suffit d'écrire une commande dedans.
 Le terminal dispose d'une commande ``help`` qui explique les autres commandes.
 Il est généralement possible d'utiliser ``help`` ou ``--help`` derrière la plupart des commandes dans le terminal pour apprendre leur utilisation.
-Le terminal peut effetc.uer la plupart des opérations fréquentes, cela comprend: 
+Le terminal peut effectuer la plupart des opérations fréquentes, cela comprend: 
 - ``cd``, qui permet de se déplacer de dossier en dossier, en entrant le chemin relatif (depuis le dossier actif) ou absolu (le chemin entier)
-- ``mkdir``, pour "make diretc.ory", qui permet de créér un dossier
+- ``mkdir``, pour "make directory", qui permet de créér un dossier
 - ``rmdir``, qui permet de supprimer un dossier
 - ``ls``, qui permet d'obtenir une liste des dossiers et fichiers dans le répertoire actif.
 
@@ -87,7 +88,7 @@ Le raccourci Firefox présent sur le bureau (l'icône) exécute en fait cette co
 
 Certains programmes, lorsqu'on les lance, peuvent prendre des **arguments**. Cette liste d'argument est vide lorsqu'on ouvre un programme depuis l'explorateur de fichiers, on est alors contraint d'utiliser un terminal pour pouvoir les utiliser.
 
-Par exemple, firefox peut prendre [tous ces arguments](https://wiki.mozilla.org/Firefox/CommandLineOptions#Windowss).
+Par exemple, firefox peut prendre [tous ces arguments](https://wiki.mozilla.org/Firefox/CommandLineOptions#Windows).
 Ce qui permet par exemple d'ouvrir firefox sur un onglet prédéfini:
 
 ```
@@ -122,7 +123,7 @@ Ce qui va ouvrir la fenêtre de gauche, il suffit de cliquer sur ``variables d'e
 ![image](path.png)
 
 Il y a deux variables qui s'appellelent "Path", une est générale, et affetc.e tous les utilisateurs de l'ordinateur,
-la seconde n'est que "locale" et affetc.e l'utilisateur qui fait le changement (l'utilisateur de cet ordinateur s'appellele démo).
+la seconde n'est que "locale" et affecte l'utilisateur qui fait le changement (l'utilisateur de cet ordinateur s'appellele démo).
 
 Précisément, le path n'est pas une liste des fichiers qui représentent les programmes qui peuvent être appelés n'importe où, mais une liste de
 répertoires (de dossiers).
@@ -140,7 +141,7 @@ A quoi servent les "autres" dossiers présents sur le disque (dans ``C:/``) si t
 Comment un logiciel peut-il être installé sur un même ordinateur mais avoir des sauvegardes différentes pour tous les utilisateurs ?
 
 La plupart des logiciels séparent leurs fichiers en deux parties: 
-- Les fichiers qui contiennent les binaires de Firefox (le programme en lui-même), qui se trouvent dans ``C:/Program Files/``, ce dossier contient l'intégralité des programmes installés sur l'ordinateur, (si l'installation est corretc.e). C'est généralement des répertoires enfants de ce dossier qui vont être ajoutés au path !
+- Les fichiers qui contiennent les binaires de Firefox (le programme en lui-même), qui se trouvent dans ``C:/Program Files/``, ce dossier contient l'intégralité des programmes installés sur l'ordinateur, (si l'installation est correcte). C'est généralement des répertoires enfants de ce dossier qui vont être ajoutés au path !
 - Les sauvegardes sont quant à elles beaucoup plus dures à trouver, elles se trouvent dans un dossier caché accessible avec l'alias ``%LOCALAPPDATA%``, qui est résolu vers le chemin ``C:/Users/[Username]/Appdata/Local/``, dossier est donc différent pour chaque utilisateur.
 
-Le dossier ``C:/Windowss/`` contient les fichiers interne de Windowss, nécessaire au fonctionnement du système, et ne doit généralement pas être modifié.
+Le dossier ``C:/Windows/`` contient les fichiers interne de Windows, nécessaire au fonctionnement du système, et ne doit généralement pas être modifié.

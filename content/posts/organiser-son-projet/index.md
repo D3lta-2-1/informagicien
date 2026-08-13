@@ -46,10 +46,10 @@ fastidieux.
 
 En pratique, on délègue toutes ces tâches à un programme qui va s'en occuper, le **build system**:
 On écrit un fichier de configuration qui décrit comment le code source est découpé, quelles sont ses dépendances et cet outil se débrouille pour
-installer ce qu'il faut, puis effetc.uer les tâches nécessaires pour obtenir un exetc.uable. Le second avantage est qu'ils sont généralement plus
-futés que nous pour réutiliser les résultats des compilations précédentes.
+installer ce qu'il faut, puis effectuer les tâches nécessaires pour obtenir un executable. De plus, ils sont généralement plus
+futés que l'homme pour réutiliser les résultats des compilations précédentes.
 
-Utiliser ces outils présente un deuxième avantage, ils simplifient considérablement le partage de projet: ils sont en charge d'installer tout le nécessaire pour que l'exécutable soit corretc.ement produit, et évitent donc à un autre utilisateur de devoir installer les dépendances un à un.
+Utiliser ces outils présente un deuxième avantage, ils simplifient considérablement le partage de projet: ils sont en charge d'installer tout le nécessaire pour que l'exécutable soit correctement produit, et évitent donc à un autre utilisateur de devoir installer les dépendances un à un.
 
 | Langage | Build system            |
 | :------ |:-----------------------:|
@@ -71,7 +71,7 @@ La plupart de ces outils s'utilisent uniquement dans le Terminal mais sont parti
 * les sources du programme sont réunies dans un dossier appelé ``src`` (source)
 * d'autres outils, qui ne sont pas diretc.ement nécessaire à la construction du projet peuvent parfois disposer eux aussi d'un fichier de configuration à la **racine du projet** (le dossier qui contient l'entièreté du projet), par exemple ce projet dispose d'un fichier ``.gitignore``, qui permet de configurer ``git`` un logiciel de partage de code source
 * certains dossiers vont être créé par les outils de développement, par exemple le dossier ``.xmake``, qui contient des informations internes au fonctionnement de xmake, ou ``build``, qui contient l'exécutable du logiciel. Ces dossiers peuvent être supprimés sans problème car ils ne servent qu'à accelerer différentes tâches. Ils seront donc reconstruits à la prochaine exécution du code source.
-* il est aussi possible de trouver des données "personnelles", comme la configuration de l'éditeur de texte (ici Zed) que l'on utilise sur ce projet. 
+* il est aussi possible de trouver des données "personnelles", c'est-à-dire qu'il est inutile de les partager avec quelqu'un d'autre, comme la configuration de l'éditeur de texte (ici Zed) que l'on utilise sur ce projet. 
 
 ## En Rust
 
